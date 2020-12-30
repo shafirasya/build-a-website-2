@@ -8,19 +8,16 @@ import {
 */
 
 function WeatherImage({ weatherType }) {
-  switch (weatherType) {
-    case "TODO":
-      return <FontAwesomeIcon icon={TODO} />;
-
-    case "TODO":
-      return <FontAwesomeIcon icon={TODO} />;
-
-    case "TODO":
-      return <FontAwesomeIcon icon={TODO} />;
-
-    default:
-      return <FontAwesomeIcon icon={TODO} />;
-  }
+  // switch (weatherType) {
+  //   case "TODO":
+  //     return <FontAwesomeIcon icon={TODO} />;
+  //   case "TODO":
+  //     return <FontAwesomeIcon icon={TODO} />;
+  //   case "TODO":
+  //     return <FontAwesomeIcon icon={TODO} />;
+  //   default:
+  //     return <FontAwesomeIcon icon={TODO} />;
+  // }
 }
 
 export default WeatherImage;
