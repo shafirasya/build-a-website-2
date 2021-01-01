@@ -1,13 +1,24 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
+import "../App.css";
 
-// props -> cityName ,temp, color
-function City({cityName, temp, color}) {
+export default function City({ cityName, temp, color }) {
+  const history = useHistory();
+
+  function handleClick() {
+    history.push("/city?name=" + cityName);
+  }
+
   return (
-    <div className={"flex flex-row p-8 justify-between items-center " + color} >
-        <div className="text-2xl">{cityName}</div>
-        <div className="text-5xl">{temp}</div>
-    </div>
+    <button
+      className={
+        "flex flex-row p-5 m-8 justify-between items-center inline-block " +
+        color
+      }
+      onClick={handleClick}
+    >
+      <div className="text-4xl font-family:Georgia">{cityName}</div>
+      <div className="text-4xl font-bold font-family:Georgia">{temp}</div>
+    </button>
   );
 }
-
-export default City;
